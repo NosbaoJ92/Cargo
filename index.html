@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/script.js"></script>
+    <link rel="icon" href="/src/img/logo2.png" type="png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        .swiftcargo, .paragrafo, .links{
+            font-family: 'Poppins', sans-serif;
+        }
+        .paragrafo,.inputs{
+            font-size: 9px;
+        }
+        .desfoque{
+            background: rgba( 255, 255, 255, 0.05 );
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur( 6.5px );
+            -webkit-backdrop-filter: blur( 6.5px );
+        }
+    </style>
+    <title>Swiftcargo</title>
+</head>
+<body class="w-full h-full">
+<!-- Start Header -->
+    <!-- Start Large Screen -->
+    <header class="w-full h-10 flex justify-between items-center sticky top-0 bg-gray-100 z-10 drop-shadow-md max-[767px]:hidden">
+        <div class="flex gap-3 h-full items-center pl-5">
+            <a href="" class="links text-xs text-center">Calculator</a>
+            <a href="" class="links text-xs"> Advantages</a>
+        </div>
+        <a href="index.html" class="flex gap-1 h-full items-center">
+            <img src="/src/img/logo.png" alt="" class="w-2 h-4">
+            <span class="swiftcargo font-medium text-sm tracking-tighter">SWIFTCARGO</span>
+        </a>
+        <div class="flex gap-3 h-full items-center">
+            <a href="" class="links text-xs">Contact</a>
+            <div class="button-hire flex h-full bg-red-600 hover:bg-red-700 items-center ">
+                <a href="" class="links w-24 text-center text-xs text-white ">Hire us →</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Large Screen -->
+    <!-- Start Small Screen -->
+    <header id="page-header" class="w-full h-10 flex justify-between items-center sticky top-0 bg-gray-100 z-20 drop-shadow-md pr-8 pl-5 min-[767px]:hidden">
+        <a href="index.html" class="flex gap-1 h-full items-center">
+            <img src="/src/img/logo.png" alt="" class="w-2 h-4">
+            <span class="swiftcargo font-medium text-sm tracking-tighter">SWIFTCARGO</span>
+        </a>
+        <button class="btnMenuIcon" id="btnAbrirMenuIcon" onclick="AbrirMenu()">☰</button>
+        <div class="divLinks hidden w-full" id='divLinks'>
+            <ul class="boxlinksMenu w-full flex ">
+                <li><a href="" class="links text-xs text-center">Calculator</a></li>
+                <li><a href="" class="links text-xs"> Advantages</a></li>
+                <li><a href="" class="links text-xs">Contact</a></li>
+                <li><div class="button-hire flex h-full bg-red-600 hover:bg-red-700 items-center ">
+                    <a href="" class="links w-24 text-center text-xs text-white ">Hire us →</a>
+                </div></li>
+            </ul>
+        </div>
+        <div class="divLinks2 hidden absolute w-full left-0 top-8" id='divLinks2'>
+            <div class="divLinks bg-gray-100 flex w-full justify-center max-[767px]:pb-5    " id='divLinks'>
+                <ul class="boxlinksMenu flex flex-col items-center h-24">
+                    <li><a href="" class="links text-xs text-center">Calculator</a></li>
+                    <li><a href="" class="links text-xs"> Advantages</a></li>
+                    <li><a href="" class="links text-xs">Contact</a></li>
+                    <li><div class="button-hire flex h-full bg-red-600 hover:bg-red-700 items-center ">
+                        <a href="" class="links w-24 text-center text-xs text-white ">Hire us →</a>
+                    </div></li>
+                </ul>
+            </div>
+        </div>
+        <button id="btnFecharMenuIcon" class="btnFecharMenuIcon hidden absolute right-8" onclick="FecharMenu()">X</button>
+    </header>
+    
+    <!-- End Small Screen -->
+<!-- End Header -->
+
+<!-- Start Main -->
+    <main class="w-full h-full">
+        <!-- Start First --> 
+        <div class="texts flex flex-col w-full h-60 bg-gray-100 items-center pt-2 max-[767px]:h-40 max-[767px]:pt-0 max-[767px]:justify-center">
+            <h1 class="text text-5xl font-medium flex text-center max-[767px]:text-4xl max-[767px]:">Efficient Cargo <br>Delivery Services</h1>
+        </div>
+        <div class="img w-full absolute top-6 flex justify-center max-[767px]:top-">
+            <img src="/src/img/container.png" alt="" class="pt-2 drop-shadow-xl w-9/12 max-[767px]:hidden min-[718px]:w-7/12 min-[840px]:w-6/12 min-[976px]:w-5/12 min-[1170px]:w-2/6 min-[1450px]:w-1/4">
+        </div>
+        <!-- End First --> 
+
+        <!-- Start Second --> 
+        <div class="calculation w-full h-full flex max-[767px]:pr-0 max-[767px]:pl-0 max-[767px]:flex-col max-[767px]:items-center min-[768px]:pr-24 min-[767px]:pl-24  min-[1339px]:pr-72 min-[1339px]:pl-72 min-[1729px]:pr-96 min-[1729px]:pl-96">   
+            <div class="text-calculation w-6/12 pl-5 flex max-[767px]:w-full  max-[767px]:justify-center">
+                <h1 class="text text-3xl font-medium flex pt-5 max-[767px]:text-center">Calculation<br>Made Easy</h1>
+            </div>
+            <div class="form w-6/12 h-full flex flex-col relative gap-4 pr-5 max-[767px]:pr-0">
+                <p class="paragrafo text-gray-500 pt-12 max-[767px]:text-justify max-[767px]:pt-5">We operate globally, connecting major cities and remote locations alike. No matter where your cargo needs to go, we have the infrastructure to delivery it efficiently.</p>
+                <div class="form">
+                    <div class="destinos flex w-full gap-2 ">
+                        <input type="text" placeholder="From" class="inputs w-6/12 border-b-2 bg-none"><span class="text-gray-500">→</span>
+                        <input type="text" placeholder="To" class="inputs w-6/12 border-b-2">
+                    </div>
+                </div>
+                <input list="datalist" id="ice-cream-choice" name="ice-cream-choice" placeholder="Type of goods" class="inputs w-full border-b-2">
+                <datalist id="datalist">
+                    <option value="Option 1">
+                    <option value="Option 2">
+                    <option value="Option 3">
+                    <option value="Option 4">
+                    <option value="Option 5">
+                </datalist>
+                <input type="text" placeholder="Weights" class="inputs w-full border-b-2">
+                <button type="submit" class="inputs w-6/12 h-7 bg-red-600 text-white text-xs hover:bg-red-700">Calculate</button>
+            </div>
+        </div>
+    <!-- End Second -->
+
+    <!-- Start Third -->
+        <div class="calculation w-full h-full flex max-[767px]:pr-0 max-[767px]:pl-0 max-[767px]:flex-col max-[767px]:items-center min-[768px]:pr-24 min-[767px]:pl-24  min-[1339px]:pr-72 min-[1339px]:pl-72 min-[1729px]:pr-96 min-[1729px]:pl-96">
+            <div class="text-calculation w-6/12 relative">
+                <h1 class="text text-3xl font-medium flex text-start pt-5 pl-3 max-[767px]:w-full  max-[767px]:justify-center max-[767px]:text-center">Streamline<br>Your Shipping</h1>
+            </div>
+            <div class="paragrafo-2 w-6/12">
+                <p class="paragrafo text-gray-500 pt-14 max-[767px]:text-justify max-[767px]:pt-5">Choose our reliable shipping methods to ensure your packages are handled with almost care and delivered in a timely manner.</p>
+            </div>
+        </div>
+        <div class="cards w-full h-full flex mt-2 max-[767px]:pr-0 max-[767px]:pl-0 max-[767px]:-mb-10 min-[768px]:pr-24 min-[767px]:pl-24  min-[1339px]:pr-72 min-[1339px]:pl-72 min-[1729px]:pr-96 min-[1729px]:pl-96">
+            <div class="2 w-4/12 h-full">
+                <img src="/src/img/caminhão.jpg" alt="" class="object-cover h-48 w-96">
+                <div class="texts shadow-md max-[767px]:h-36">
+                    <div class="flex justify-between pr-2 pl-2">
+                        <h3 class="font-semibold text-lg">Land</h3>
+                        <h3 class="font-semibold text-lg">01</h3>
+                    </div>
+                    <p class="paragrafo w-9/12 text-gray-500 pl-2 h-16">We are committed to providing reliable, efficient and cost-effective land shipping solutions.</p>
+                </div>
+            </div>
+            <div class="2 w-4/12 h-full">
+                <img src="/src/img/avião.jpg" alt="" class="object-cover h-48 w-96 hover:">
+                <div class="texts shadow-md max-[767px]:h-36">
+                    <div class="flex justify-between pr-2 pl-2">
+                        <h3 class="font-semibold text-lg">Air</h3>
+                        <h3 class="font-semibold text-lg">02</h3>
+                    </div>
+                    <p class="paragrafo w-9/12 text-gray-500 pl-2 h-16">This rapid delivery ensures time-sensitive items, such as perishable goods.</p>
+                </div>
+            </div>
+            <div class="3 w-4/12 h-full pb-10">
+                <img src="/src/img/navio.jpg" alt="" class="object-cover h-48 w-96">
+                <div class="texts shadow-md max-[767px]:h-36">
+                    <div class="flex justify-between pr-2 pl-2">
+                        <h3 class="font-semibold text-lg">Sea</h3>
+                        <h3 class="font-semibold text-lg">03</h3>
+                    </div>
+                    <p class="paragrafo w-9/12 text-gray-500 pl-2 h-16 ">Efficiency, affordability and capacity to handle large volumes.</p>
+                </div>      
+            </div>
+        </div>
+    <!-- End Third --> 
+    
+    <!-- Start Fourth --> 
+        <div class="texts flex w-full flex-wrap h-full bg-black pt-10 pb-10 pl-5 pr-2 gap-5 ">
+            <div class="numbers flex w-full h-full">
+                <div class="texts w-6/12 h-full flex flex-col gap-5 pb-10 invisible max-[767px]:hidden">
+                    <h1 class="text text-4xl font-medium flex text-white max-[767px]:text-center">Stremlining<br>Global Trade<br> & Transportation</h1>
+                </div>
+                <div class="texts w-6/12 h-full flex flex-col gap-5 pb-10 max-[767px]:w-full">
+                    <h1 class="text text-4xl font-medium flex text-white">Stremlining<br>Global Trade<br> & Transportation</h1>
+                </div>
+            </div>
+            <div class="numbers flex w-full h-full">
+                <div class="1 w-6/12 flex items-center">
+                    <h3 class="text-white text-3xl font-medium">01</h3>
+                </div>
+                <div class="1 w-6/12 h-full">
+                    <h3 class="text-white text-2xl">Extensive Coverage</h3>
+                    <p class="text-gray-500 text-sm max-[767px]:text-justify max-[767px]:pr-4">We operate globally, connecting major cities and remote locations alike. No matter where your cargo needs to go, we have the infrastructure to delivery it efficiently.</p>
+                </div>
+            </div> 
+            <div class="numbers flex w-full h-full">
+                <div class="2 w-6/12 flex items-center">
+                    <h3 class="text-white text-3xl font-medium">02</h3>
+                </div>
+                <div class="2 w-6/12 h-full">
+                    <h3 class="text-white text-2xl">Secure and Reliable</h3>
+                    <p class="text-gray-500 text-sm max-[767px]:text-justify max-[767px]:pr-4">We priorized the safety of your cargo throughtout the entire journey. Our experienced team handles your goods with care, and we use state-of-the-art tracking technology to keep you updated on the status of your shipment.</p>
+                </div>
+            </div>
+            <div class="numbers flex w-full h-full">
+                <div class="3 w-6/12 flex items-center">
+                    <h3 class="text-white text-3xl font-medium">03</h3>
+                </div>
+                <div class="1 w-6/12 h-full">
+                    <h3 class="text-white text-2xl">Flexibe Solutions</h3>
+                    <p class="text-gray-500 text-sm max-[767px]:text-justify max-[767px]:pr-4">We understand that each cargo delivery requirement is unique. That's why we offer a range of services to cater to your specific needs, including express delivery, temperature-controlled shipping.</p>
+                </div>
+            </div>  
+        </div>
+    <!-- End Fourth --> 
+
+    <!-- Start Fifth --> 
+        <div class=" w-full bg-cover bg-top   flex h-screen"  style="background-image:url(/src/img/opc1.jpg)">
+            <div class="left w-6/12 h-full max-[767px]:hidden">   
+            </div>
+            <div class="right flex flex-col justify-between w-6/12 pb-10 pt-10 max-[767px]:w-full max-[767px]:pt-5">
+                <h1 class="text  font-medium flex text-white 
+                max-[767px]:text-5xl max-[767px]:pl-5 min-[768px]:text-7xl min-[1024px]:text-8xl">Reliable Car<br>Shipping Solutions</h1>
+                <div class="desfoque w-full flex flex-col gap-4 p-5">
+                    <p class="text-white text-xl max-[767px]:text-justify max-[767px]:pr-4">From initial inquiries to tracking your vehicle's progress. We strive to provide clear communication, timley updates, and personalizedattetion to ensure your completioe satisfation with our services..</p>
+                    <div class="learn-more flex justify-between w-6/12 relative ">
+                        <a href="" class="text-white border-b-2 w-full hover:border-lime-400 hover:text-lime-400">Learn more <span class="text-white absolute end-0">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- End Fifth -->
+    <!-- End Sixth -->
+        <div class="squares logos w-full h-64 flex flex-wrap">
+            <a href="#" class="square w-3/12 h-full flex justify-center shadow-md max-[767px]:w-4/12">
+                <img src="/src/img/toyota.svg" alt="" class="w-16 drop-shadow-md hover:scale-105 hover:transition-transform ease-in-out">
+            </a>
+            <a href="#" class="square w-3/12 h-full flex justify-center shadow-md max-[767px]:w-4/12">
+                <img src="/src/img/tesla.svg" alt="" class="w-16 drop-shadow-md hover:scale-105 hover:transition-transform ease-in-out">
+            </a>
+            <a href="#" class="square w-3/12 h-full flex justify-center shadow-md max-[767px]:w-4/12">
+                <img src="/src/img/apple.svg" alt="" class="w-16 drop-shadow-md hover:scale-105 hover:transition-transform ease-in-out">
+            </a>
+            <a href="#" class="square hidden w-3/12 h-full flex justify-center shadow-md max-[767px]:hidden">
+                <img src="/src/img/.png" alt="" class="w-16">
+            </a>
+        </div>
+    <!-- End Sixth -->
+    </main>
+<!-- End Main -->
+<!-- Start Footer -->
+    <footer class="w-full flex-wrap h-full bg-black pt-36 pl-5 gap-5 max-[767px]:pt-10">
+        <div class="numbers flex w-full h-full max-[767px]:flex-col">
+            <div class="texts w-6/12 h-full flex flex-col gap-5 pb-10 max-[767px]:w-full">
+                <p class="text-xl flex text-white ">
+                    +34003002020
+                <br>154 N Larchmont Blvd Los Angeles.
+                <br>CA 90002 United States Of America</p>
+                <p class="text-xl flex text-white ">SwiftCargo, Inc©2023</p>
+            </div>
+            <div class="texts w-6/12 h-full flex flex-col pb-10 max-[767px]:w-full max-[767px]:text-justify max-[767px]:pr-4">
+                <p class="text-xl flex text-white pr-2">Your cargos safety is our top priority. We implement stringent security, measures and utilize advanced tracking systems to ensure that your goods are protected throughout the shipping process. you can have peace of mind knowing that your valuable shipment are in safe hands.</p>
+            </div>
+        </div>
+    </footer>
+<!-- End Footer -->
+</body>
+</html>
